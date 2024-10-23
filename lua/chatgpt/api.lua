@@ -251,7 +251,7 @@ local function loadRequiredConfig(envName, configName, optionName, callback, def
     if Config.options[optionName] ~= nil and Config.options[optionName] ~= "" then
       loadConfigFromCommand(Config.options[optionName], optionName, callback, defaultValue)
     else
-      logger.warn(configName .. " variable not set")
+      -- logger.warn(configName .. " variable not set")
       return
     end
   end
